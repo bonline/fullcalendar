@@ -14,6 +14,8 @@
  * Date: @DATE
  *
  */
+
+define(["jquery"], function (jQuery) {
  
 (function($, undefined) {
 
