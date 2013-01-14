@@ -61,10 +61,10 @@ zip:
 		| ${DATE_SED} \
 		> "${BUILD_DIR}/fullcalendar/fullcalendar/fullcalendar.print.css"
 	
-	@echo "compressing core js..."
-	@java -jar ${BUILD_DIR}/compiler.jar --warning_level VERBOSE --jscomp_off checkTypes --externs build/externs.js \
-		--js ${BUILD_DIR}/fullcalendar/fullcalendar/fullcalendar.js \
-		> ${BUILD_DIR}/fullcalendar/fullcalendar/fullcalendar.min.js; \
+#	@echo "compressing core js..."
+#	@java -jar ${BUILD_DIR}/compiler.jar --warning_level VERBOSE --jscomp_off checkTypes --externs build/externs.js \
+#		--js ${BUILD_DIR}/fullcalendar/fullcalendar/fullcalendar.js \
+#		> ${BUILD_DIR}/fullcalendar/fullcalendar/fullcalendar.min.js; \
 		
 	@echo "building plugins..."
 	@for loader in ${SRC_DIR}/*/_loader.js; do \
